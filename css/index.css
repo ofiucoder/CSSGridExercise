@@ -1,0 +1,61 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  height: 600px;
+  width: 700px;
+  gap: 1em;
+  margin: 2px;
+  padding: 2px;
+}
+
+.grid div {
+  background: #ecf0f1;
+  grid-template-columns: minmax(100px, auto);
+  grid-template-rows: minmax(200px, auto);
+  padding: 1em;
+}
+
+.grid div:hover {
+  border: 2px solid #f1c40f;
+}
+
+
+.ltp {
+  grid-column: 1/4;
+}
+
+.rtp {
+  grid-column: 4/8;
+}
+
+.lsdtp {
+  grid-column: 1/2;
+}
+
+.lsdin {
+  grid-column: 2/3;
+}
+
+.mncttp {
+  grid-area: 2/3/4/6;
+}
+.rsdtp {
+    grid-column: 6/8;
+  }
+  
+.lsdbt {
+  grid-column: 1/3;
+}
+
+.rsdbt {
+  grid-column: 6/8;
+}
+
+.lbt {
+  grid-column: 1/3;
+}
+
+.rbt {
+  grid-column: 3/8;
+}
